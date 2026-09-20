@@ -1,12 +1,10 @@
-from pathlib import Path
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-MODEL_PATH = BASE_DIR / "models" / "bert_dialogue_act"
+MODEL_NAME = "aditiverma6/meeting-dialogue-act-bert"
 
-tokenizer = AutoTokenizer.from_pretrained(str(MODEL_PATH))
-model = AutoModelForSequenceClassification.from_pretrained(str(MODEL_PATH))
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
 
 model.eval()
 
