@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+*.pyc
+
+.cache/
+huggingface/
+
+.env
+.vscode/
+
+.DS_Store
+Thumbs.db
+
+models/bert_dialogue_act/model.safetensors
+
+# AMI dataset
+data/

@@ -1,0 +1,36 @@
+{
+    "label2id": {
+        "ass": 0,
+        "bck": 1,
+        "be.neg": 2,
+        "be.pos": 3,
+        "el.ass": 4,
+        "el.inf": 5,
+        "el.sug": 6,
+        "el.und": 7,
+        "fra": 8,
+        "inf": 9,
+        "off": 10,
+        "oth": 11,
+        "stl": 12,
+        "sug": 13,
+        "und": 14
+    },
+    "id2label": {
+        "0": "ass",
+        "1": "bck",
+        "2": "be.neg",
+        "3": "be.pos",
+        "4": "el.ass",
+        "5": "el.inf",
+        "6": "el.sug",
+        "7": "el.und",
+        "8": "fra",
+        "9": "inf",
+        "10": "off",
+        "11": "oth",
+        "12": "stl",
+        "13": "sug",
+        "14": "und"
+    }
+}

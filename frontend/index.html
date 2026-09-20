@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meeting Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Meeting Intelligence</h1>
+            <p>Turn meeting transcripts into actionable insights.</p>
+        </header>
+
+        <section class="input-card">
+
+            <h2>Meeting Transcript</h2>
+
+            <textarea
+                id="transcript"
+                placeholder="Paste your meeting transcript here..."
+            ></textarea>
+
+            <button id="analyzeBtn" onclick="analyzeMeeting()">
+                Analyze Meeting
+            </button>
+
+        </section>
+
+        <div id="loading" class="loading hidden">
+            Analyzing meeting...
+        </div>
+
+        <section id="result" class="results hidden">
+
+            <div class="card summary">
+                <h2>📝 Summary</h2>
+                <p id="summary"></p>
+            </div>
+
+            <div class="card">
+                <h2>✅ Action Items</h2>
+                <div id="actions"></div>
+            </div>
+
+            <div class="card">
+                <h2>💡 Suggestions</h2>
+                <div id="suggestions"></div>
+            </div>
+
+            <div class="card">
+                <h2>🎯 Decisions</h2>
+                <div id="decisions"></div>
+            </div>
+
+            <div class="card">
+                <h2>ℹ️ Information</h2>
+                <div id="information"></div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
